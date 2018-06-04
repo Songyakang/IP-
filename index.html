@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' href='./css/ipCalculator.css'>
+</head>
+<body>
+	<div id='content'>
+		<div class='content'>
+			<span>ip地址:</span><input v-model='ipaddress'>
+		</div>
+		<div class='content'>
+			<span>子网掩码:</span><input v-model='wordNetworkMask'>
+		</div>
+		
+		<div class='content'>
+			<span>ip地址:</span>
+			<a>{{ipCalculate}}</a>
+		</div>
+		<div class='content'>
+			<span>可用地址:</span>
+			<a>{{all}}</a>
+		</div>
+		<div class='content'>
+			<span>子网掩码:</span>
+			<a>{{wordNetworkMaskCalculate}}</a>
+		</div>
+		<div class='content'>
+			<span>网络位:</span>
+			<a>{{networkwei}}</a>
+		</div>
+		<div class='content'>
+			<span>最大可用ip:</span>
+			<a>{{maxip}}</a>
+		</div>
+		<div class='content'>
+			<span>最小可用ip:</span>
+			<a>{{minip}}</a>
+		</div>
+		<div class='content'>
+			<span>广播地址:</span>
+			<a>{{guangbo}}</a>
+		</div>
+	</div>
+</body>
+<script src="./js/vue.js"></script>
+<script src='./js/ipCalculator.js'></script>
+</html>
